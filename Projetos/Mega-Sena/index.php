@@ -27,7 +27,7 @@ $award_person[2] = ($award*0.19)/$winners[2];
 
     <head>
         <meta charset="utf-8"/>
-        <title>Números Aleatórios</title>
+        <title>Mega-Sena</title>
         <link rel="stylesheet" type="text/css" href="style.css"/>
     </head>
 
