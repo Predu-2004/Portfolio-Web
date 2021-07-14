@@ -1,0 +1,40 @@
+body {
+    overflow-x: hidden;
+}
+
+.container-fluid {
+    overflow: hidden;
+}
+
+.background {
+    background-image: url("images/capa.png"), linear-gradient(to right top, #ff0026, #4c00ff);
+    background-attachment: fixed;
+    background-position: bottom center;
+}
+
+.navigation {
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.button {
+    background: #4c00ff;
+    color: #fff;
+}
+
+.title {
+    color: #4c00ff;
+}
+
+.title2 {
+    color: #00f2ff;
+}
+
+.col-md-6 {
+    overflow: hidden;
+}
+
+.col-md-6 .col-12 {
+    display: flex;
+    margin: 0 5em;
+    transform: rotate(25deg);
+}
