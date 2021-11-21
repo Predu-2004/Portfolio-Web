@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <link rel="shortcut icon" href="img/logo2.png">
+
+    <title>Calculadora Espelhos Esféricos</title>
+
+    <script src="scripts/script.js" defer></script>
+    
+  </head>
+  <body>
+    
+    <div class="container-fluid p-0">
+
+        <div class="row">
+
+            <div class="col-12">
+
+                <nav class="navbar navbar-expand-lg navbar-dark mb-5 p-3 barra-navegacao">
+
+                    <a href="#" class="navbar-brand d-flex">
+
+                        <img src="img/logo2.png" class="logo">
+
+                        <div class="d-flex flex-column  ms-2">
+
+                            <h1 class="my-1 title-1 text-uppercase fw-bold">Calculadora de Espelhos Esféricos</h1>
+
+                            <hr class="barra my-1">
+
+                            <h2 class="my-1 title-2 fw-light">Equação de Gauss</h2>
+
+                        </div>
+
+                    </a>
+
+                    <ul class="nav navbar-nav ms-lg-auto d-flex flex-row my-3">
+                        <li class="nav-item mx-2">
+                            <a href="#" class="nav-link">Home</a>
+                        </li>
+
+                        <li class="nav-item mx-2">
+                            <a href="#sobre_formula" class="nav-link">Sobre a Fórmula</a>
+                        </li>
+
+                        <li class="nav-item mx-2">
+                            <a href="#sobre_nos" class="nav-link">Sobre Nós</a>
+                        </li>
+                    </ul>
+
+                </nav>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="container mb-5">
+
+        <div class="row align-items-end">
+
+            <div class="col-lg-6">
+
+                <form method="get" action="script.js">
+
+                    <fieldset>
+
+                        <legend class="text-white fw-bold fs-2">Calculadora:</legend>
+
+                        <p class="form-text text-white">*Insira dois valores que já possui para descobrir a incógnita que deseja.</p>
+
+                        <div class="my-3">
+                            <label for="distancia-focal" class="form-label text-white fw-bold fs-5">Distância Focal (f):</label>
+                            <input type="number" min=0 class="d-block form-control" id="distancia-focal">
+                        </div>
+
+                        <div class="my-3">
+                            <label for="posicao-objeto" class="form-label text-white fw-bold fs-5">Posição do Objeto (p):</label>
+                            <input type="number" min=0 class="d-block form-control" id="posicao-objeto">
+                        </div>
+
+                        <div class="my-3">
+                            <label for="posicao-imagem" class="form-label text-white fw-bold fs-5">Posição da Imagem (p')</label>
+                            <input type="number" min=0 class="d-block form-control" id="posicao-imagem">
+                        </div> 
+
+                        <div class="my-3">
+                            <button type="submit" class="btn btn-large btn-primary fw-bold w-100 my-1" id="calcular">Calcular</button>
+                            <button type="reset" class="btn btn-large btn-danger fw-bold w-100 my-1" id="resetar">Resetar</button>
+                        </div>
+
+                    </fieldset>
+
+                </form>
+
+            </div>
+
+            <div class="col-lg-6 p-3">
+
+                <img src="img/formula.png" class="w-100">
+
+            </div>
+
+        </div>
+
+        <div class="row align-items-center my-5 text-white">
+
+            <div class="col-12">
+
+                <h1 class="fw-bold fs-2" id="sobre_formula">Sobre a Fórmula:</h1>
+
+                <p class="lead">A equação dos pontos conjugados, ou equação de Gauss, nos fornece a posição e a altura da imagem conjugada por uma lente esférica. ... Através de um estudo analítico podemos determinar a altura e a posição de uma imagem conjugada por uma lente esférica. Para isso basta que conheçamos a posição e o tamanho do objeto.</p>
+
+                <p class="lead">Podemos definir uma lente esférica como sendo uma associação de dois dioptros planos em que um deles é necessariamente esférico, enquanto o outro pode ser esférico ou plano. Sendo assim, aqui trataremos como lente esférica qualquer corpo transparente limitado por duas superfícies de um dioptro.</p>
+
+                <p class="lead">Através de um estudo analítico podemos determinar a altura e a posição de uma imagem conjugada por uma lente esférica. Para isso basta que conheçamos a posição e o tamanho do objeto.</p>
+
+                <p class="lead">Vamos supor que temos um objeto MN colocado diante de uma lente esférica convergente. A imagem produzida por essa lente é definida fazendo uso de apenas três raios de luz que saem do objeto.</p>
+
+                <p class="lead">Site de onde o texto foi tirado: <a href="https://brasilescola.uol.com.br/fisica/equacao-dos-pontos-conjugados.htm#:~:text=A%20equa%C3%A7%C3%A3o%20dos%20pontos%20conjugados,conjugada%20por%20uma%20lente%20esf%C3%A9rica.&text=Atrav%C3%A9s%20de%20um%20estudo%20anal%C3%ADtico,e%20o%20tamanho%20do%20objeto.">Brasil Escola - Física;</a></p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-12 text-white">
+
+                <div class="my-3">
+
+                    <h1 class="fw-bold fs-2 my-3" id="sobre_nos">Sobre Nós:</h1>
+
+                    <p class="lead my-3">Olá! Nós somos o Sexteto Fantástico, responsáveis por desenvolver esta calculadora de Espelhos Esféricos. Acompanhe abaixo os integrantes de nosso grupo e o modo de participação de cada um.</p>
+
+                </div>
+
+                <div class="carousel slide my-5" data-bs-ride="carousel" id="carousel">
+
+                    <div class="carousel-inner">
+
+                        <div class="carousel-item active text-center">
+
+                            <img src="img/nicholas.png" class="perfil">
+
+                            <h2 class="fs-3 my-3">Nicholas M. A. Costa</h2>
+
+                            <p class="lead my-3">Desenvolvedor do algoritmo e aplicativo Windows</p>
+
+                            <a href="https://www.instagram.com/mus4ng/">
+                                <img src="img/instagram.png" class="instagram">
+                            </a>
+
+                        </div>
+
+                        <div class="carousel-item text-center">
+
+                            <img src="img/mariana.png" class="perfil">
+
+                            <h2 class="fs-3  my-3">Mariana G. Souza</h2>
+
+                            <p class="lead">Desenvolvedora da apresentação de slides</p>
+
+                            <a href="https://www.instagram.com/marigalvincio/">
+                                <img src="img/instagram.png" class="instagram">
+                            </a>
+
+                        </div>
+
+                        <div class="carousel-item text-center">
+
+                            <img src="img/duda.png" class="perfil">
+
+                            <h2 class="fs-3  my-3">Maria Eduarda N. Silva</h2>
+
+                            <p class="lead">Desenvolvedora da logo e apresentação de slides</p>
+
+                            <a href="https://www.instagram.com/dudaens_/">
+                                <img src="img/instagram.png" class="instagram">
+                            </a>
+
+                        </div>
+
+                        <div class="carousel-item text-center">
+
+                            <img src="img/joao.png" class="perfil">
+
+                            <h2 class="fs-3  my-3">João Vitor S. Santos</h2>
+
+                            <p class="lead">Auxiliar criativo no desenvovimento do front-end</p>
+
+                            <a href="https://www.instagram.com/jvs4nt/">
+                                <img src="img/instagram.png" class="instagram">
+                            </a>
+
+                        </div>
+
+                        <div class="carousel-item text-center">
+
+                            <img src="img/predu.png" class="perfil">
+
+                            <h2 class="fs-3  my-3">Pedro L. F. Filho</h2>
+
+                            <p class="lead">Desenvolvedor Web do site</p>
+
+                            <a href="https://www.instagram.com/pedrofranca_br/">
+                                <img src="img/instagram.png" class="instagram">
+                            </a>
+
+                        </div>
+
+                        <div class="carousel-item text-center">
+
+                            <img src="img/gustavo.png" class="perfil">
+
+                            <h2 class="fs-3  my-3">Gustavo R. Medeiros</h2>
+
+                            <p class="lead">Realização da pesquisa referente a apresentação</p>
+
+                            <a href="https://www.instagram.com/guss_012/">
+                                <img src="img/instagram.png" class="instagram">
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                    
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>

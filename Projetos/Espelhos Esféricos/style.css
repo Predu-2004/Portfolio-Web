@@ -1,0 +1,42 @@
+/*  */
+
+body {
+    /* background: #05203d; */
+    background: #05203d;
+    overflow-x: hidden;
+}
+
+body nav.barra-navegacao {
+    background: #073051;
+}
+
+body img.logo {
+    width: 4em;
+    height: 4em;
+}
+
+body h1.title-1 {
+    color: #D6E3C9;
+    font-size: 0.8em;
+}
+
+body h2.title-2 {
+    color: #fff;
+    font-size: 0.8em;
+}
+
+body hr.barra {
+    border: 0.3em solid #FFF;
+    border-color: #FFF;
+}
+
+body img.perfil {
+    width: 15em;
+    height: 15em;
+    border-radius: 100%;
+}
+
+body img.instagram {
+    width: 3em;
+    height: 3em;
+}
