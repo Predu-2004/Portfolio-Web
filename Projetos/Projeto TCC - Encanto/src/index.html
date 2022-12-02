@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/dist/output.css">
+    <link rel="stylesheet" href="./input.css">
+    <link rel="icon" href="./media/icon.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+    <script src="./script.js" defer></script>
+    <script src="./swiper.js" defer></script>
+    <title>Encanto</title>
+</head>
+
+<body class="bg-black">
+
+    <nav class="flex justify-between items-center px-3">
+
+        <a href="#" class="w-36 2xl:w-64">
+            <img src="./media/logo.png" class="w-auto"> 
+        </a>
+
+        <!-- Mobile Button -->
+        <button class="md:hidden mobile-menu-button">
+            <span class="iconify" data-icon="bytesize:menu" style="color: white;" data-width="35" data-height="35"></span>
+        </button>
+
+        <div class="hidden md:block">
+        
+            <div class="flex items-center justify-center space-x-3">
+
+                <a href="#" class="text-white text-lg 2xl:text-xl font-semibold hover:underline hover:underline-offset-8 hover:decoration-2">Home</a>
+                <a href="#planilhas" class="text-white text-lg 2xl:text-xl font-semibold hover:underline hover:underline-offset-8 hover:decoration-2">Arrecadação</a>
+                <a href="#jogos" class="text-white text-lg 2xl:text-xl font-semibold hover:underline hover:underline-offset-8 hover:decoration-2">Jogos</a>
+                <a href="./quiz.html" class="text-white text-lg 2xl:text-xl font-semibold hover:underline hover:underline-offset-8 hover:decoration-2">Quiz</a>
+
+                <span class="text-white text-2xl font-bold">|</span>
+
+                <a href="https://www.instagram.com/correiodoinfo/">
+                    <span class="iconify" data-icon="akar-icons:instagram-fill" style="color: white;" data-width="35" data-height="35"></span>
+                </a>
+
+            </div>
+        </div>
+
+    </nav>
+
+    <!-- Mobile Menu -->
+    <nav class="flex flex-col p-3 space-y-3 mobile-menu md:hidden">
+
+        <a href="#" class="font-semibold text-white text-md text-center border border-white rounded-full py-1 hover:bg-white hover:text-black hover:duration-500">Home</a>
+        <a href="#" class="font-semibold text-white text-md text-center border border-white rounded-full py-1 hover:bg-white hover:text-black hover:duration-500">Planilhas</a>
+        <a href="#" class="font-semibold text-white text-md text-center border border-white rounded-full py-1 hover:bg-white hover:text-black hover:duration-500">Jogos Anteriores</a>
+        <a href="#" class="font-semibold text-white text-md text-center border border-white rounded-full py-1 hover:bg-white hover:text-black hover:duration-500">Quiz</a>
+
+        <hr class="border-2 border-white">
+
+        <div class="flex justify-center items-center space-x-3">
+
+            <a href="#">
+                <span class="iconify" data-icon="akar-icons:facebook-fill" style="color: white;" data-width="35" data-height="35"></span>
+            </a>
+
+            <a href="#">
+                <span class="iconify" data-icon="akar-icons:instagram-fill" style="color: white;" data-width="35" data-height="35"></span>
+            </a>
+
+        </div>
+
+    </nav>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 p-3 relative overflow-hidden">
+
+        <div class="bg-black/30 flex flex-col items-left justify-center p-3 md:p-12 space-y-3 md:space-y-5 2xl:space-y-10 z-10">
+
+            <h1 class="text-white text-xl md:text-4xl lg:text-5xl 2xl:text-5xl font-bold">Bem-vindo(a) ao nosso site!</h1>
+
+            <p class="text-white text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl text-left font-sans">Aqui você verá todo o nosso progresso financeiro durante o projeto do  TCC  do 3º ETIM Informática de 2022. Explore já o site e fique por dentro de tudo, sua guia nessa jornada será a Mirabel, aproveite!</p>
+
+        </div>
+
+        <div class="bg-black/30 hidden md:flex md:justify-center md:items-center p-3 z-10">
+
+            <img src="./media/mirabel4.png" class="w-48 lg:w-64 xl:w-96 2xl:w-2/4 mx-auto mr-0">
+
+            <span class="iconify animate-bounce ml-auto lg:hidden" data-icon="carbon:touch-1" style="color: white;" data-width="35" data-height="35"></span>
+
+            <span class="iconify animate-bounce ml-auto hidden lg:block" data-icon="bi:mouse" style="color: white;" data-width="35" data-height="35"></span>
+
+        </div>
+
+        <video autoplay muted loop src="./media/Encanto Trailer Oficial Dublado.mp4" class="absolute w-full z-0 top-0"></video>
+
+    </div>
+
+    <div class="section1 grid grid-cols-1 md:grid-cols-2 p-3">
+
+        <div class="bg-black/30 flex flex-col items-left justify-center p-3 md:p-12 space-y-3 md:space-y-5 2xl:space-y-10">
+
+            <h2 class="text-white text-xl md:text-3xl lg:text-4xl font-bold">Por que a Mirabel?</h2>
+
+            <p class="text-white text-sm md:text-base lg:text-lg xl:text-xl text-left font-sans">No planejamento do projeto, nós realizamos um sorteio para definir quem ficaria com a paleta de cores de cada personagem do filme, nós ficamos com a da Mirabel, portanto, desenvolvemos o site com sua temática.</p>
+
+        </div>
+
+        <div class="hidden md:flex md:flex-col md:items-left md:justify-center md:p-3 lg:p-12 z-10">
+
+            <img src="./media/mirabel.png" class="w-auto">
+
+        </div>
+
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 p-6">
+
+        <div class="flex flex-col items-center justify-center p-3 2xl:p-12 space-y-3 md:space-y-5 2xl:space-y-10">
+
+            <span class="iconify" data-icon="wpf:statistics" style="color: white;" data-width="60" data-height="60"></span>
+
+            <p class="text-white text-sm md:text-base lg:text-lg xl:text-xl text-center font-sans">Consulte nossas estatísticas, dados e planilhas, a fim de consultar o andamento do projeto!</p>
+
+        </div>
+
+        <div class="flex flex-col items-center justify-center p-3 space-y-3 md:space-y-5 2xl:space-y-10">
+
+            <span class="iconify" data-icon="fluent:board-games-20-regular" style="color: white;" data-width="60" data-height="60"></span>
+
+            <p class="text-white text-sm md:text-base lg:text-lg xl:text-xl text-center font-sans">Dê uma olhada também em nossos jogos que realizamos no decorrer do ano!</p>
+
+        </div>
+
+        <div class="flex flex-col items-center justify-center p-3 space-y-3 md:space-y-5">
+
+            <span class="iconify" data-icon="ic:outline-quiz" style="color: white;" data-width="60" data-height="60"></span>
+
+            <p class="text-white text-sm md:text-base lg:text-lg xl:text-xl text-center font-sans">Teste suas  habilidades e jogue nosso quiz e teste seus conhecimentos sobre o filme e nosso projeto!</p>
+
+        </div>
+
+    </div>
+
+    <div class="section1 grid grid-cols-1 md:grid-cols-2 p-3">
+
+        <div class="hidden md:flex md:flex-col md:items-left md:justify-center md:p-3 lg:p-12 z-10">
+
+            <img src="./media/arrecadacao.png" class="w-auto" id="planilha">
+
+        </div>
+
+        <div class="bg-black/30 flex flex-col items-left justify-center p-3 md:p-12 space-y-3 md:space-y-5 2xl:space-y-10">
+
+            <h2 class="text-white text-xl md:text-3xl lg:text-4xl font-bold">Arrecadação e Meta</h2>
+
+            <p class="text-white text-sm md:text-base lg:text-lg xl:text-xl text-left font-sans">O valor que arrecadamos até o presente momento é de: <span class="font-bold">R$ 4.554,00</span></p>
+
+        </div>
+
+    </div>
+
+    <div class="flex flex-col items-left justify-center p-6 space-y-3 md:space-y-5 2xl:space-y-10">
+
+        <h2 class="text-white text-xl md:text-3xl lg:text-4xl font-bold" id="jogos">Jogos Anteriores</h2>
+
+        <div class="flex flex-col items-center space-y-3 md:justify-left md:flex-row md:space-x-3 md:space-y-0">
+
+            <div class="bg-white/30 w-80 h-80 hover:animate-pulse">
+
+                <img src="./media/bingo.png" class="w-full h-full">
+
+            </div>
+
+            <div class="bg-white/30 w-80 h-80 hover:animate-pulse">
+
+                <img src="./media/namorados.png" class="w-full h-full">
+
+            </div>
+
+            <div class="bg-white/30 w-80 h-80 hover:animate-pulse">
+
+                <img src="./media/correio.png" class="w-full h-full">
+
+            </div>
+
+            <div class="bg-white/30 w-80 h-80 hover:animate-pulse">
+
+                <img src="./media/cesta.png" class="w-full h-full">
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="flex flex-col items-left justify-center p-6 space-y-3 md:space-y-5 2xl:space-y-10">
+
+        <h2 class="text-white text-xl md:text-3xl lg:text-4xl font-bold">Siga nossos colaboradores</h2>
+
+    </div>
+
+    <div class="swiper mySwiper swiper-initialized swiper-horizontal swiper-pointer-events swiper-backface-hidden text-white m-3">
+
+        <div class="swiper-wrapper" id="swiper-wrapper-4b57d7c8a9286f91" aria-live="polite">
+            
+        <div class="swiper-slide swiper-slide-active" style="width: 284px; margin-right: 30px;" role="group" aria-label="1 / 9">
+            
+            <a href="https://www.instagram.com/ester_mugiwaraS2/" target="_blank" class="flex flex-col items-center justify-center space-y-3">
+
+                <img src="./media/esther.png" class="bg-white/30 w-40 h-40 md:w-52 md:h-52 rounded-full border-2 border-purple-600 hover:animate-pulse">
+
+                <h2 class="text-white text-lg md:text-xl lg:text-1xl font-bold cursor-none">@Ester_mugiwaraS2</h2>
+
+            </a>
+
+        </div>
+
+        <div class="swiper-slide swiper-slide-next" style="width: 284px; margin-right: 30px;" role="group" aria-label="2 / 9">
+        
+            <a href="https://twitter.com/paulacciriaco28/" target="_blank" class="flex flex-col items-center justify-center space-y-3">
+
+                <img src="./media/paula.png" class="bg-white/30 w-40 h-40 md:w-52 md:h-52 rounded-full border-2 border-purple-600 hover:animate-pulse">
+
+                <h2 class="text-white text-lg md:text-xl lg:text-1xl font-bold cursor-none">@paulaciriaco28</h2>
+
+            </a>
+
+        </div>
+
+        <div class="swiper-slide" style="width: 284px; margin-right: 30px;" role="group" aria-label="3 / 9">
+        
+            <a href="https://www.instagram.com/ta_mdvl/" target="_blank" class="flex flex-col items-center justify-center space-y-3">
+
+                <img src="./media/thamires.png" class="bg-white/30 w-40 h-40 md:w-52 md:h-52 rounded-full border-2 border-purple-600 hover:animate-pulse">
+
+                <h2 class="text-white text-lg md:text-xl lg:text-1xl font-bold cursor-none">@ta_mdvl</h2>
+
+            </a>
+
+        </div>
+
+        <div class="swiper-slide" style="width: 284px; margin-right: 30px;" role="group" aria-label="4 / 9">
+        
+            <a href="https://www.instagram.com/luatlz/" target="_blank" class="flex flex-col items-center justify-center space-y-3">
+
+                <img src="./media/luana.png" class="bg-white/30 w-40 h-40 md:w-52 md:h-52 rounded-full border-2 border-purple-600 hover:animate-pulse">
+
+                <h2 class="text-white text-lg md:text-xl lg:text-1xl font-bold cursor-none">@luatlz</h2>
+
+            </a>
+            
+        </div>
+
+        <div class="swiper-slide" style="width: 284px; margin-right: 30px;" role="group" aria-label="5 / 9">
+        
+            <a href="https://www.instagram.com/camila_notcabello/" target="_blank" class="flex flex-col items-center justify-center space-y-3">
+
+                <img src="./media/camila.png" class="bg-white/30 w-40 h-40 md:w-52 md:h-52 rounded-full border-2 border-purple-600 hover:animate-pulse">
+
+                <h2 class="text-white text-lg md:text-xl lg:text-1xl font-bold cursor-none">@camila_notcabello</h2>
+
+            </a>
+
+        </div>
+
+
+        <div class="swiper-slide" style="width: 284px; margin-right: 30px;" role="group" aria-label="6 / 9">
+        
+            <a href="https://www.instagram.com/renata_belila/" target="_blank" class="flex flex-col items-center justify-center space-y-3">
+
+                <img src="./media/renata.png" class="bg-white/30 w-40 h-40 md:w-52 md:h-52 rounded-full border-2 border-purple-600 hover:animate-pulse">
+
+                <h2 class="text-white text-lg md:text-xl lg:text-1xl font-bold cursor-none">@renata_belila</h2>
+
+            </a>
+
+        </div>
+
+        <div class="swiper-slide" style="width: 284px; margin-right: 30px;" role="group" aria-label="7 / 9">
+        
+            <a href="https://www.instagram.com/pedrofranca_br/" target="_blank" class="flex flex-col items-center justify-center space-y-3">
+
+                <img src="./media/pedro.png" class="bg-white/30 w-40 h-40 md:w-52 md:h-52 rounded-full border-2 border-purple-600 hover:animate-pulse">
+
+                <h2 class="text-white text-lg md:text-xl lg:text-1xl font-bold cursor-none">@pedrofranca_br</h2>
+
+            </a>
+        
+        </div>
+
+        <div class="swiper-slide" style="width: 284px; margin-right: 30px;" role="group" aria-label="8 / 9">
+        
+            <a href="https://www.instagram.com/mizael_m.m/" target="_blank" class="flex flex-col items-center justify-center space-y-3">
+
+                <img src="./media/mizael.png" class="bg-white/30 w-40 h-40 md:w-52 md:h-52 rounded-full border-2 border-purple-600 hover:animate-pulse">
+
+                <h2 class="text-white text-lg md:text-xl lg:text-1xl font-bold cursor-none">@mizael_m.m</h2>
+
+            </a>
+            
+        </div>
+        
+        <div class="swiper-slide" role="group" aria-label="9 / 9" style="width: 284px; margin-right: 30px;">
+        
+            <a href="https://www.instagram.com/willian.apm/" target="_blank" class="flex flex-col items-center justify-center space-y-3">
+
+                <img src="./media/william.png" class="bg-white/30 w-40 h-40 md:w-52 md:h-52 rounded-full border-2 border-purple-600 hover:animate-pulse">
+
+                <h2 class="text-white text-lg md:text-xl lg:text-1xl font-bold cursor-none">@willian.apm</h2>
+
+            </a>
+
+        </div>
+        
+        <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+
+    </div>
+
+    <footer class="flex justify-center items-center p-3 m-5 2xl:p-5 space-x-3">
+
+        <img src="./media/receba.png" class="w-4">
+
+        <h2 class="text-white text-sm md:text-lg font-bold">Feito com a magia do <span class="text-dourado">Encanto</span>, pra você.</h2>
+
+    </footer>
+
+</body>
+</html> 

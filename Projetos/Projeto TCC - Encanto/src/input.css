@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@media (max-width: 425px) {
+    .section1 {
+        background: url("./media/mirabel.png") top center;
+        background-size: 100% 100%;
+    }    
+}
